@@ -1,0 +1,136 @@
+/* Circle */
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 70px;
+  }
+  
+  .single-chart {
+    width: 83%;
+    justify-content: space-around ;
+  }
+  
+  .circular-chart {
+    display: block;
+    margin: 6px auto;
+    max-width: 90%;
+    max-height: 250px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .circular-chart.orange .circle {
+    stroke: #ff9f00;
+  }
+  
+  .circular-chart.green .circle {
+    stroke: #4CC790;
+  }
+  
+  .circular-chart.blue .circle {
+    stroke: #3c9ee5;
+  }
+  
+  .percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
+
+  /* Project Status */
+
+  .projectstatus {
+      margin-left: 240px;
+      padding-top: 50px;
+      display:table;
+      text-align:center;
+      margin:auto;
+      padding-bottom:5px; /*control the distance*/
+      background:linear-gradient(blue,blue) bottom /80%   2px   no-repeat;
+  }
+
+  .line {
+    border-bottom: 1px dashed blue;
+    text-align:left;
+}
+
+.lineImg {
+    background-color:white;
+    padding:5px 5px 0px 5px;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    overflow: hidden;
+}
+
+  hr {
+    flex:1
+    border-bottom: 1px dashed blue;
+  }
+
+
+/* Tabs*/
+
+.tabs > .nav.nav-tabs{
+
+    border: none;
+      color:#fff;
+      background:#272e38;
+      border-radius:0;
+  
+  }
+  .tabs > div a.nav-item.nav-link,
+  .tabs > div a.nav-item.nav-link.active
+  {
+    border: none;
+      padding: 18px 25px;
+      color:#fff;
+      background:#272e38;
+      border-radius:0;
+  }
+  
+  .tabs > div a.nav-item.nav-link.active:after
+   {
+    content: "";
+    position: relative;
+    bottom: -60px;
+    left: -10%;
+    border: 15px solid transparent;
+    border-top-color: #e74c3c ;
+  }
+  .tab-content{
+    background: #fdfdfd;
+      line-height: 25px;
+      border: 1px solid #ddd;
+      border-top:5px solid #e74c3c;
+      border-bottom:5px solid #e74c3c;
+      padding:30px 25px;
+  }
+  
+  .tabs > div a.nav-item.nav-link:hover,
+  .tabs > div a.nav-item.nav-link:focus
+  {
+    border: none;
+      background: #e74c3c;
+      color:#fff;
+      border-radius:0;
+      transition:background 0.20s linear;
+  }
