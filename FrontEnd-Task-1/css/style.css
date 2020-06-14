@@ -4,6 +4,7 @@ body {
     overflow-y: scroll;
   }
   
+  /* Left Side Navigation*/
   .sidenav {
     height: 100%;
     width: 80%;
@@ -28,7 +29,8 @@ body {
     background-color: orange;
   }
   
- 
+ /* Right Side Navigation*/
+
   .sidenavright {
     height: 659px;
     width: 130%;
@@ -53,8 +55,8 @@ body {
   }
 
   .main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
+    margin-left: 160px; 
+    font-size: 28px; 
     padding: 0px 10px;
   }
   
@@ -135,7 +137,7 @@ body {
 	margin: 0px 10px;
 }
 
-/*downsection*/
+/*Final section*/
 
 .downsection {
     margin-top: 20px;
